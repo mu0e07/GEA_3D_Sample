@@ -24,6 +24,30 @@ public class RewardCalc : MonoBehaviour
         int member1 = gold / members;
         int leader = gold % members;
         Debug.Log("1인당: " + member1 + "G, " + ("리더 보너스: " + leader + "G"));
+
+        Exp();
+    }
+
+    void Exp()
+    {
+        int basicExp = kills * expPerKill;
+        int finalExp = (int)(basicExp * expRate);
+        int level = finalExp / 100 + 1;
+        int remainExp = finalExp % 100;
+        int nextExp = 100 - remainExp;
+
+
+        Debug.Log("경험치 " + finalExp + " (기본 " + basicExp + ")");
+        Debug.Log("Lv " + level + ", 다음 레벨까지 " + nextExp);
+
+        Damage();
+
+    }
+    void Damage()
+    {
+        float averageDamage = (float)totalDamage / hits;
+
+        Debug.Log("평균 데미지 " + averageDamage);
     }
     // Update is called once per frame
     void Update()
