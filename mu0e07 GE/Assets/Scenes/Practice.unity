@@ -310,6 +310,7 @@ GameObject:
   - component: {fileID: 707128747}
   - component: {fileID: 707128749}
   - component: {fileID: 707128750}
+  - component: {fileID: 707128751}
   m_Layer: 0
   m_Name: Tester
   m_TagString: Untagged
@@ -374,6 +375,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4def3439583733247979eed9c314273f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lesson010
+--- !u!114 &707128751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707128746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33fa5c46c2955924faf3db5562357947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelSystem
+  expPerKill: 35000
+  killCount: 3
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
